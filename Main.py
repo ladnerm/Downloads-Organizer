@@ -25,6 +25,8 @@ def LoggingEventHandler():
 				move(file, musicPath)
 			elif file.name.endswith((".png", ".pdf")):
 				move(file, docsPath)
+			elif file.name == ".DS_Store":
+				pass
 			else:
 				move(file, miscellaneousPath)
 
